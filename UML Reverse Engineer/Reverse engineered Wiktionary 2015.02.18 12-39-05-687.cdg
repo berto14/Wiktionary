@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered Wiktionary 2015.02.18 12-39-05-687">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="com.mycompany.wiktionary" name="Handler" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="tagFnoun" visibility="package" type="boolean"/>
+        <Field name="tagNumber" visibility="package" type="boolean"/>
+        <Field name="tag" visibility="package" type="boolean"/>
+        <Field name="content" visibility="package" type="StringBuilder"/>
+        <Field name="start" visibility="package" type="long"/>
+        <Field name="articleCounter" visibility="package" type="int"/>
+        <Field name="checking" visibility="package" type="String"/>
+        <Field name="yes" visibility="package" type="boolean"/>
+        <Field name="out" visibility="package" type="BufferedWriter"/>
+      </Fields>
+      <Methods>
+        <Method name="file" visibility="public" returnType="void">
+          <Argument type="StringBuilder" name="inf"/>
+        </Method>
+        <Method name="file" visibility="public" returnType="void">
+          <Argument type="String" name="inf"/>
+        </Method>
+        <Method name="startDocument" visibility="public" returnType="void"/>
+        <Method name="endDocument" visibility="public" returnType="void"/>
+        <Method name="startElement" visibility="public" returnType="void">
+          <Argument type="String" name="uri"/>
+          <Argument type="String" name="localName"/>
+          <Argument type="String" name="qName"/>
+          <Argument type="Attributes" name="attributes"/>
+        </Method>
+        <Method name="characters" visibility="public" returnType="void">
+          <Argument type="char" name="ch"/>
+          <Argument type="int" name="start"/>
+          <Argument type="int" name="length"/>
+        </Method>
+        <Method name="endElement" visibility="public" returnType="void">
+          <Argument type="String" name="uri"/>
+          <Argument type="String" name="localName"/>
+          <Argument type="String" name="qName"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="20.0" package="com.mycompany.wiktionary" name="Main" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="xmlFilePath" visibility="private" type="String" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Methods>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String" name="argv"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
